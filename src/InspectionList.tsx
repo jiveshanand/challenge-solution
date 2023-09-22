@@ -73,7 +73,7 @@ export const InspectionList = () => {
 
     return `${year}-${month}-${day}`;
   };
-  console.log('ExpandedInspections', inspections);
+
   return (
     <>
       <NavigationBar
@@ -148,8 +148,7 @@ export const InspectionList = () => {
                               ].tags.filter((tagName) => tagName !== tag);
                               updateMasterData[indexToUpdate].tags =
                                 filteredTags;
-                              console.log('filteredTags', filteredTags);
-                              console.log('updateMasterData', updateMasterData);
+
                               setInspections(updateMasterData);
 
                               inspectionstoUpdate.splice(index, 1);
